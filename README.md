@@ -1,0 +1,24 @@
+# Resources:
+* The Zero Knowledge Podcast: https://youtu.be/Hnfp8FFAw50
+  - Meta perspective on bridge landscape:
+  - Scaling ethereum => Plasma => ZKP => need multiple rollups to scale => interrollup communication => bridge
+  - Is the rollup a bridge? - Yes but a different kind of bridge - social consensus of L1 affects L2
+  - Socket - interop protocol to send asset & data cross chain - aggregate thrid party bridges with native assets on chain A to B
+  - What is a Bridge - sends assets across chains | two chains connected by messaging protocol & application on top of it => bridge - allow communicaiton between chains
+  - Collection of contracts on two chains orchestrated by offchain man-in-the-middle
+  - Implementation - all rollups operate => get a Geth node running + have component bridge - eg: Optimism messager connects Geth node & running sequencer to L1 contracts => 'validating bridges'
+  - Fragmentation of liquidity
+  - Hardforking of chain under 51% attack => how does it affect cross-chain interactions? - Vitalik - multichain over crosschain
+  - How are bridges like oracles?
+  - Asynchronicity in web3 required to make it scale - latency is large - gas prices, costly api calls, 7 day latency in optimisitc rollups
+  - Types of bridges: Nomad - Optmistic style || Axelar - cryptographic style
+  - Socket Liquidity Layer = aggreagtion of third party - trustless solutions | Transparency on security of bridges - 150 bridging projects with small account of liquidity
+      - Classification created through community + framework created
+      - Assign score for security
+      - Light client bridges = most secure after rollups | rollups = light clients with social consensus | Mina
+      - If messaging protocol has a security property, all applications on top inherits it | Optimism = rollup => fast to go from Ethereum to Optimism & slow vice-versa
+      - Messaging protocol => bridge application on top (Token Bridge) => Liquidity Networks on top of token bridges which allow you to send tokens from A to B chain & liquidity networks allow you to swap already minted assets
+      - USDC on Ethereum is not the same as USDC on Solana => Liquidity networks allow swaps through token bridge
+      - Crosschain lending through this - possibility - tricky
+      - Hop & Connext - allow you to get in touch with market maker & allow for swaps
+      - Latency | Security | Cost
